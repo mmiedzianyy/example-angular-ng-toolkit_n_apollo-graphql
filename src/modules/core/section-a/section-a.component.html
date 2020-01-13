@@ -1,0 +1,13 @@
+<div class="container">
+    <h2>Countries</h2>
+
+    <ng-container *ngIf="countries$ | async as countries">
+
+        <ul class="list-group">
+            <ng-container *ngFor="let country of countries">
+                <li class="list-group-item">Name: {{ country.name }}</li>
+            </ng-container>
+        </ul>
+
+    </ng-container>
+</div>
